@@ -1,2 +1,5 @@
 # binary-to-base10
-Binary to Base-10 Converter
+
+A small app to convert binary to base-10 (decimal) numbers.
+
+Live version [here](https://justin-k-ellis.github.io/binary-to-base10/).

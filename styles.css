@@ -18,6 +18,18 @@ main {
   align-items: center;
 }
 
+h1 {
+  margin-top: 2rem;
+}
+
+form {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
 .container {
   display: flex;
   flex-direction: column;
@@ -26,9 +38,9 @@ main {
   border: 1px solid white;
   border-radius: 1rem;
   padding: 2rem;
-  font-size: 1.5rem;
-
+  font-size: 1.25rem;
   box-shadow: 0 0 20px 1px white;
+  width: 100%;
 }
 
 input,
@@ -44,5 +56,9 @@ input:invalid {
 @media (max-width: 480px) {
   main {
     width: 90%;
+  }
+
+  form {
+    flex-direction: column;
   }
 }

@@ -18,8 +18,11 @@
       <div class="container">
         <form class="form">
           <label for="numInput">Binary Number</label>
-          <input type="number" id="numInput" name="numInput" />
-          <button type="submit">⇨</button>
+          <input type="number" id="numInput" name="numInput" pattern="[01]" />
+          <div class="btns">
+            <button type="submit">⇨</button>
+            <button type="button" class="clear">X</button>
+          </div>
         </form>
         <p class="output"></p>
       </div>

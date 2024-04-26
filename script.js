@@ -1,6 +1,7 @@
 const form = document.querySelector(".form");
 const output = document.querySelector(".output");
 const input = document.querySelector("#numInput");
+const clear = document.querySelector(".clear");
 
 // Submition
 form.addEventListener("submit", (event) => {
@@ -37,10 +38,12 @@ input.addEventListener("input", (event) => {
   const value = event.target.value;
   const isBinary = value.match(/^[01]+$/);
   if (!isBinary) {
-    console.log("no");
     input.setCustomValidity("Enter 0s and 1s only.");
   } else {
-    console.log("yes");
     input.setCustomValidity("");
   }
+});
+
+clear.addEventListener("click", () => {
+  input.value = "";
 });
