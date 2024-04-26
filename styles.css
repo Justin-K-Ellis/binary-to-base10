@@ -36,3 +36,13 @@ button {
   border: solid 1px white;
   border-radius: 100rem;
 }
+
+input:invalid {
+  box-shadow: 0 0 5px 1px red;
+}
+
+@media (max-width: 480px) {
+  main {
+    width: 90%;
+  }
+}
